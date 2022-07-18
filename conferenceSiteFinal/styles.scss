@@ -74,7 +74,7 @@ body {
     overflow-x: hidden;
     z-index: 11;
     position: relative;
-    margin-top: 3rem;
+    margin-top: 3.5rem;
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -90,7 +90,11 @@ body {
     .main-left {
         padding-left: 1rem;
         h1 {
-            font-size: 2.5rem;
+            font-weight: 600;
+            color: $blue;
+            padding-bottom: .5rem;
+        }
+        h4 {
             font-weight: 600;
             color: $blue;
             padding-bottom: .5rem;
@@ -114,7 +118,7 @@ body {
 }
 
 #newsletter {
-    width: 100vw;
+    width: 100%;
     padding: 3rem;
     background-color: $secondary-bg;
     box-shadow: 0 -5px 10px -2px rgb(41, 44, 44, 0.2);
@@ -331,8 +335,8 @@ body {
             background-color: $gray;
             color: white;
             padding: 15px;
-            padding-bottom: 10px;
-            border-radius: 5px;
+            // padding-bottom: 10px;
+            border-radius: 10px;
             width: 60vw;
             p {
                 margin: 0;
@@ -348,7 +352,7 @@ body {
                 padding: 0.2rem;
                 background-color: $blue;
                 text-align: center;
-                border-radius: 10px;
+                border-radius: 5px;
                 .names {
                     display: flex;
                     justify-content: center;
@@ -580,7 +584,7 @@ body {
         font-size: 1rem;
     }
     .showcase {
-        margin-top: 3rem;
+        margin-top: 3.5rem;
         padding-top: 2rem;
         display: flex;
         justify-content: center;
@@ -591,7 +595,7 @@ body {
             justify-content: center;
             flex-direction: column;
             align-items: center;
-            gap: 3rem;
+            gap: 1rem;
         }
         .main-left {
             padding-left: 0rem;
@@ -600,6 +604,10 @@ body {
                 font-weight: 600;
                 color: $blue;
                 margin-bottom: 1.5rem;
+                padding-bottom: 0;
+            }
+            h4 {
+                margin-bottom: 1rem;
             }
         }
         .main-right {
@@ -627,8 +635,8 @@ body {
         }
     }
     #photos {
-        padding: 3rem;
-        padding-top: 1rem;
+        padding: 2rem;
+        padding-bottom: 2.5rem;
         .photos-head {
             color: $blue;
             font-size: 2.5rem;
@@ -724,6 +732,7 @@ body {
             h1 {
                 font-size: 2.3rem;
                 color: $blue;
+                padding-bottom: 1rem;
             }
             text-align: center;
             font-size: 1.5rem;
@@ -744,7 +753,7 @@ body {
     #progress-bar-container ul {
         padding: 0;
         margin: 0;
-        padding-top: 10px;
+        padding-top: 0px;
         position: absolute;
         width: 100%;
         margin-top: 0px;
@@ -757,8 +766,8 @@ body {
         display: none;
     }
     #progress-bar-container li {
-        width: 20%;
-        text-align: center;
+        width: 30%;
+        text-align: left;
         font-size: 11px;
         height: 60px;
         display: flex;
@@ -766,7 +775,7 @@ body {
         align-items: center;
     }
     #progress-bar-container li .step-inner {
-        bottom: 1rem;
+        bottom: .5rem;
         font-size: 14px;
         margin-left: 0rem;
     }
@@ -780,8 +789,8 @@ body {
         width: 90%;
         margin: auto;
         background: $gray;
-        border-radius: 4px;
-        margin-top: 10rem;
+        border-radius: 5px;
+        margin-top: 8rem;
     }
     #progress-content-section .section-content {
         padding: 30px 20px;
@@ -830,7 +839,6 @@ body {
                 color: white;
                 font-size: 0rem;
                 padding: 15px;
-                padding-bottom: 10px;
                 border-radius: 5px;
                 width: 80vw;
                 padding: auto 5rem;
@@ -841,7 +849,7 @@ body {
                 .item {
                     display: flex;
                     justify-content: center;
-                    align-items: center;
+                    align-items: flex-start;
                     text-align: center;
                     flex-direction: column;
                     height: 70vh;
@@ -853,17 +861,17 @@ body {
                         display: flex;
                         flex-direction: column;
                         justify-content: center;
-                        align-items: center;
+                        align-items: flex-start;
                         flex-wrap: wrap;
                         width: 100%;
+                        padding-left: 1.5rem;
                         .left-names {
-                            text-align: start;
                             padding-right: 0px;
                             border-right: 0px solid $dark-gray;
                         }
                         .right-names {
-                            text-align: start;
                             padding-left: 0px;
+                            border-left: 0px solid $dark-gray;
                         }
                         p {
                             padding: 2px;
